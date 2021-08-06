@@ -5,8 +5,13 @@ public class StringCalculator {
 
         if (numbers.length() == 1) return Integer.parseInt(numbers); //for single number
         else {
+            int result=0;
             String splittedString[] = numbers.split(","); //for two joined numbers
-            int result = Integer.parseInt(splittedString[0]) + Integer.parseInt(splittedString[1]);
+
+            for(int i=0;i<splittedString.length;i++){
+                result+=Integer.parseInt(splittedString[i]);
+            }
+
             return result;
         }
     }

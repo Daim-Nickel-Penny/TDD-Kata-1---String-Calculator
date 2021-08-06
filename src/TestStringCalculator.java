@@ -29,4 +29,11 @@ public class TestStringCalculator {
         assertEquals(solverObj.Add("1,2"), 3);
     }
 
+    public void handleUnknownAmountOfNumbers(){
+        /*Handling an unknown amount of numbers and returning sum*/
+        StringCalculator solverObj = new StringCalculator();
+        assertEquals(solverObj.Add("1,2,3,4,5"), 15);
+    }
+
+
 }
