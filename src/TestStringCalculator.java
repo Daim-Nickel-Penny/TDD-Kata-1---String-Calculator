@@ -35,5 +35,10 @@ public class TestStringCalculator {
         assertEquals(solverObj.Add("1,2,3,4,5"), 15);
     }
 
+    public void handlerNewLine(){
+        /*Handling new lines between numbers*/
+        StringCalculator solverObj = new StringCalculator();
+        assertEquals(solverObj.Add("1\n2,3"), 6);
+    }
 
 }
