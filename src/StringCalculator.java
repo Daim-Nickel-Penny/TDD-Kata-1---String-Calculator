@@ -3,8 +3,7 @@ public class StringCalculator {
       This method is also called in the first test as well
      */
     public int Add(String numbers){
-        return 0; //for an empty string
+        int res = (numbers.isEmpty()) ?  0 : Integer.parseInt(numbers);
+        return  res;
     }
-
-
 }

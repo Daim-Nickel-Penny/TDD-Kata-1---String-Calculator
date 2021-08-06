@@ -11,5 +11,14 @@ public  class TestStringCalculator{
     }
 
 
+    public void handlerTakeNumber(){
+        /*
+         * This expects the numer to be input should be returned
+         * */
+        StringCalculator solverObj = new StringCalculator();
+        assertEquals(solverObj.Add("1"),1);
+    }
+
+
 
 }
