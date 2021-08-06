@@ -1,9 +1,13 @@
 public class StringCalculator {
-    /*Function for empty string
-      This method is also called in the first test as well
-     */
-    public int Add(String numbers){
-        int res = (numbers.isEmpty()) ?  0 : Integer.parseInt(numbers);
-        return  res;
+    public int Add(String numbers) {
+
+        if (numbers.isEmpty()) return 0; //for empty string
+
+        if (numbers.length() == 1) return Integer.parseInt(numbers); //for single number
+        else {
+            String splittedString[] = numbers.split(","); //for two joined numbers
+            int result = Integer.parseInt(splittedString[0]) + Integer.parseInt(splittedString[1]);
+            return result;
+        }
     }
 }
